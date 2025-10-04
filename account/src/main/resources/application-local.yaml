@@ -9,9 +9,10 @@ spring:
       maximum-pool-size: 20
       auto-commit: true
       transaction-isolation: TRANSACTION_READ_COMMITTED
-    show-sql: true
-    generate-ddl: true
   jpa:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
